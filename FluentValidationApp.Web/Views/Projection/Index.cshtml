@@ -1,0 +1,9 @@
+﻿@model FluentValidationApp.Web.DTO.EventDateDto
+
+<form asp-action="Index" method="post">
+    <input asp-for="Day" />
+    <input asp-for="Month" />
+    <input asp-for="Year" />
+    <input type="submit" value="Kaydet" />
+</form>
+<h1>@ViewBag.date</h1>

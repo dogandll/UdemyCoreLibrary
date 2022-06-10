@@ -12,7 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using AutoMapper;
 namespace FluentValidationApp.Web
 {
     public class Startup
@@ -27,6 +27,7 @@ namespace FluentValidationApp.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAutoMapper(typeof(Startup));
 
             //Fluent validation kullanımı için
             services.AddControllersWithViews().AddFluentValidation(options =>
