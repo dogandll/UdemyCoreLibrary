@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentValidationApp.Web", "FluentValidationApp.Web\FluentValidationApp.Web.csproj", "{97F2FFED-29DC-448C-A8E2-E7943E8D18F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimit.API", "RateLimit.API\RateLimit.API.csproj", "{36765954-1030-43A0-9A61-3342AD283572}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RateLimit.API", "RateLimit.API\RateLimit.API.csproj", "{36765954-1030-43A0-9A61-3342AD283572}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorHandling.Web", "ErrorHandling.Web\ErrorHandling.Web.csproj", "{DCEDEAC5-D916-4962-9008-CD24DECF8EDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{36765954-1030-43A0-9A61-3342AD283572}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36765954-1030-43A0-9A61-3342AD283572}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36765954-1030-43A0-9A61-3342AD283572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCEDEAC5-D916-4962-9008-CD24DECF8EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCEDEAC5-D916-4962-9008-CD24DECF8EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCEDEAC5-D916-4962-9008-CD24DECF8EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCEDEAC5-D916-4962-9008-CD24DECF8EDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
