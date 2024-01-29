@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Solid.App.SRPGood
-{ 
+﻿namespace Solid.App.SRPGood
+{
     /*
      * Single Responsibility Principle - Tek sorumluluk biçimi 
      * Yani bir klass bir iş yapsın birden fazla sorumluluğu olması

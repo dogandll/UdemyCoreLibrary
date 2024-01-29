@@ -1,24 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Solid.App.SRPBad
+﻿namespace Solid.App.SRPBad
 {
+    /*
+ * Single Responsibility Principle - Tek sorumluluk biçimi 
+ * Yani bir klass bir iş yapsın birden fazla sorumluluğu olması
+ * İhlal eden yazım ile ilgili örnek aşağıdaki gibidir.
+ * ******* Projede birden fazla sorumluluk tek klas'a yüklenmiştir ve SRP ihlal edilmiştir ********
+ * Konsola yazma
+ *  Liste tutma , 
+ * Repository Update  Delete işlemleri
+ * 
+ */
     public class Product
-    {
-
-        /*
-         * Single Responsibility Principle - Tek sorumluluk biçimi 
-         * Yani bir klass bir iş yapsın birden fazla sorumluluğu olması
-         * İhlal eden yazım ile ilgili örnek aşağıdaki gibidir.
-         * ******* Projede birden fazla sorumluluk tek klas'a yüklenmiştir ve SRP ihlal edilmiştir ********
-         * Konsola yazma
-         *  Liste tutma , 
-         * Repository Update  Delete işlemleri
-         * 
-         */
+    { 
         public int Id { get; set; }
         public string Name { get; set; }
 
