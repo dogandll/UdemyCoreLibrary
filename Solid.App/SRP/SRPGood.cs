@@ -5,28 +5,27 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Solid.App.SRPGood
-{
+{ 
+    /*
+     * Single Responsibility Principle - Tek sorumluluk biçimi 
+     * Yani bir klass bir iş yapsın birden fazla sorumluluğu olması
+     * İhlal etmeyen yazım ile ilgili örnek aşağıdaki gibidir.
+     * ******* Projede birden fazla sorumluluk tek klas'a yüklenmemiştir , SRP ihlal edilmemiştir ********
+     * Konsola yazma - (Presenter class)
+     *  Liste tutma  - Update -  Delete işlemleri - (Repository class), 
+     *  Product class (Entity class)
+     * 
+     */
     public class Product
     {
 
-        /*
-         * Single Responsibility Principle - Tek sorumluluk biçimi 
-         * Yani bir klass bir iş yapsın birden fazla sorumluluğu olması
-         * İhlal eden yazım ile ilgili örnek aşağıdaki gibidir.
-         * ******* Projede birden fazla sorumluluk tek klas'a yüklenmiştir ve SRP ihlal edilmiştir ********
-         * Konsola yazma
-         *  Liste tutma , 
-         * Repository Update  Delete işlemleri
-         * 
-         */
         public int Id { get; set; }
-        public string Name { get; set; }
-
-        private static List<Product> ProductList = new List<Product>();
-
-        public List<Product> GetProducts => ProductList;
-
-        public Product()
+        public string Name { get; set; } 
+    } 
+    public class ProductRepository
+    {
+        private static List<Product> ProductList = new List<Product>(); 
+        public ProductRepository()
         {
             ProductList = new() {
                 new() { Id = 1, Name = "Kalem 1" },
@@ -36,7 +35,7 @@ namespace Solid.App.SRPGood
                 new() { Id = 5, Name = "Kalem 5" }
             };
         }
-
+        public List<Product> GetProducts => ProductList;
         public void SaveOrUpdate(Product p)
         {
             var hasProduct = ProductList.Any(x => x.Id == p.Id);
@@ -62,12 +61,10 @@ namespace Solid.App.SRPGood
             ProductList.Remove(hasProduct);
         }
 
-     
-    }
-
+    } 
     public class ProductPresenter
     {
-        public void WriteToConsole(List<Product>Product)
+        public void WriteToConsole(List<Product>ProductList)
         {
             ProductList.ForEach(x => Console.WriteLine($"{x.Id} - {x.Name}"));
 
