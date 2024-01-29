@@ -50,14 +50,20 @@
 
 #endregion 
 #region LSPGood  
-using Solid.App.SRP.LSPGood;
+//using Solid.App.SRP.LSPGood;
 
-BasePhone phone = new IPhone();
+//BasePhone phone = new IPhone();
 
-phone.Call();
-((ITakePhoto)phone).TakePhoto();
+//phone.Call();
+//((ITakePhoto)phone).TakePhoto();
 
-phone = new Nokia3310();
-phone.Call(); 
+//phone = new Nokia3310();
+//phone.Call(); 
 
 #endregion
+
+
+using Solid.App.SRP.DIPGoodAndBad;
+
+var productService = new ProductService(new ProductRepositoryFromMongoDb());
+productService.GetAll().ForEach(x => Console.WriteLine(x));
