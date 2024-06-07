@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid.App", "Solid.App\Solid.App.csproj", "{90BFACAA-57D1-4E63-9C03-3F50A2636F3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidationApp.Web", "FluentValidationApp.Web\FluentValidationApp.Web.csproj", "{8CF5DD53-7D31-435B-AB99-81664B8348F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentValidationApp.Web", "FluentValidationApp.Web\FluentValidationApp.Web.csproj", "{8CF5DD53-7D31-435B-AB99-81664B8348F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimit.API", "RateLimit.API\RateLimit.API.csproj", "{44668D3A-A8B2-4593-8176-98B3EBB9E828}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8CF5DD53-7D31-435B-AB99-81664B8348F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CF5DD53-7D31-435B-AB99-81664B8348F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CF5DD53-7D31-435B-AB99-81664B8348F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44668D3A-A8B2-4593-8176-98B3EBB9E828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44668D3A-A8B2-4593-8176-98B3EBB9E828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44668D3A-A8B2-4593-8176-98B3EBB9E828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44668D3A-A8B2-4593-8176-98B3EBB9E828}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
